@@ -1,0 +1,104 @@
+/* Reset some default styles to achieve consistency */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a common background color for the body */
+body {
+  background-color: #006a4e; /* Dark green background inspired by the Bangladeshi flag */
+  color: #fff; /* White text */
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Style the header with a gradient background, centered text, and navigation links */
+header {
+  background: linear-gradient(
+    to right,
+    #006a4e,
+    #f00
+  ); /* Gradient background inspired by the Bangladeshi flag */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffd700; /* Gold text color */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff5733; /* Orange hover color */
+}
+
+/* Style the main content area with a bit of padding */
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style the product cards */
+.card {
+  background-color: #fff; /* White card background */
+  border: 1px solid #006a4e; /* Dark green border */
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
+  width: calc(30% - 40px); /* 30% width for each card, including margins */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #006a4e; /* Dark green title text */
+}
+
+.card p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333; /* Dark gray description text */
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #f00,
+    #006a4e
+  ); /* Gradient background inspired by the Bangladeshi flag */
+  color: #fff; /* White text */
+  padding: 20px 0;
+}
